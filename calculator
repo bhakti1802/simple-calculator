@@ -1,0 +1,40 @@
+def add(n1, n2):
+    return n1 + n2
+
+def subtract(n1, n2):
+    return n1 - n2
+
+def multiply(n1, n2):
+    return n1 * n2
+
+def divide(n1, n2):
+    return n1 / n2
+
+print("Operation:\n" \
+        "1. Addition.\n" \
+        "2. Subtraction.\n" \
+        "3. Multiplication.\n" \
+        "4. Division.\n")
+
+choice = int(input("Enter your choice :"))
+
+num_1 = int(input("Enter first number: "))
+num_2 = int(input("Enter second number: "))
+
+if choice == 1:
+    print(num_1, "+", num_2, "=",
+                    add(num_1, num_2))
+
+elif choice == 2:
+    print(num_1, "-", num_2, "=",
+                    subtract(numr_1, num_2))
+
+elif choice == 3:
+    print(num_1, "*", num_2, "=",
+                    multiply(num_1, num_2))
+
+elif choice == 4:
+    print(num_1, "/", num_2, "=",
+                    divide(num_1, num_2))
+else:
+    print("Invalid input")
